@@ -7,7 +7,7 @@
 <a name="arabic"></a>
 ## 🇪🇬 اللغة العربية
 
-أداة ذكية ومؤتمتة مصممة لصناع المحتوى الإسلامي، تتيح لك إنشاء مقاطع فيديو قصيرة (Reels/Shorts) للقرآن الكريم بجودة عالية وبضغطة زر واحدة. تقوم الأداة بدمج التلاوة العطرة مع النص القرآني بالرسم العثماني فوق خلفيات طبيعية خلابة.
+أداة ذكية ومؤتمتة تتيح لك إنشاء مقاطع فيديو قصيرة (Reels/Shorts) للقرآن الكريم بجودة عالية وبضغطة زر واحدة. تقوم الأداة بدمج التلاوة العطرة مع النص القرآني بالرسم العثماني فوق خلفيات طبيعية خلابة.
 
 ### 🚀 المميزات
 - **أتمتة كاملة:** جلب النصوص والتسجيلات الصوتية تلقائياً من الإنترنت.
@@ -50,7 +50,7 @@
 <a name="english"></a>
 ## 🇬🇧 English
 
-An automated, intelligent tool designed for Islamic content creators. It allows you to generate high-quality Quran Reels/Shorts with a single click, combining beautiful recitations with Uthmani script overlays on stunning nature backgrounds.
+An automated, intelligent tool designed to allow you to generate high-quality Quran Reels/Shorts with a single click, combining beautiful recitations with Uthmani script overlays on stunning nature backgrounds.
 
 ### 🚀 Features
 - **Full Automation:** Automatically fetches Quranic text and audio from the web.
@@ -102,5 +102,6 @@ Developed by **Arabian AI School**
 - **Download Portable Version | تحميل النسخة المحمولة:** [إضغط هنا / Click Here](#)
 
 © المشروع لأهداف تعليمية فقط وجميع الحقوق محفوظة لأصحابها
+
 
 
