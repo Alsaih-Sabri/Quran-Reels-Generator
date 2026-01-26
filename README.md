@@ -98,10 +98,11 @@ Developed by **Arabian AI School**
 ---
 
 ### 🎥 Tutorial & Download | روابط الشرح والتحميل
-- **Watch Tutorial | فيديو الشرح:** [إضغط هنا / Click Here](#)
-- **Download Portable Version | تحميل النسخة المحمولة:** [إضغط هنا / Click Here](#)
+- **Watch Tutorial | فيديو الشرح:** https://youtu.be/TL1Gim1VT40
+- **Download Portable Version | تحميل النسخة المحمولة:** https://drive.google.com/file/d/12B7vphnf6WLPWScvLIZX7l31Oh4VKDiR/view?usp=sharing
 
 © المشروع لأهداف تعليمية فقط وجميع الحقوق محفوظة لأصحابها
+
 
 
 
