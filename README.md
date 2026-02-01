@@ -30,20 +30,46 @@
 - **Python 3.10+**: لغة البرمجة الأساسية.
 - **FFmpeg**: المحرك المسؤول عن معالجة الفيديو والصوت (ضروري جداً).
 - **ImageMagick**: الأداة المسؤولة عن تحويل النصوص إلى صور لدمجها في الفيديو.
-  - *تنبيه:* عند تثبيت ImageMagick على Windows، تأكد من تفعيل خيار **"Install legacy utilities (e.g. convert)"**.
 
 ### 📥 طريقة التشغيل اليدوي
+
+#### الخطوة 1: تثبيت المتطلبات الأساسية (ضروري جداً)
+افتح نافذة الأوامر (PowerShell أو CMD) **كمسؤول** وقم بتنفيذ الأوامر التالية:
+
+```powershell
+# تثبيت FFmpeg
+winget install Gyan.FFmpeg
+
+# تثبيت ImageMagick
+winget install ImageMagick.ImageMagick
+```
+
+#### الخطوة 2: التحقق من التثبيت
+بعد التثبيت، تأكد من نجاح العملية بتنفيذ الأوامر التالية:
+
+```powershell
+# اختبار FFmpeg
+ffmpeg -version
+
+# اختبار ImageMagick
+magick -version
+```
+
+**ملاحظة:** إذا لم تعمل الأوامر، قم بإعادة تشغيل نافذة الأوامر أو الكمبيوتر.
+
+#### الخطوة 3: تثبيت المشروع
 1. قم بتحميل المستودع وفك الضغط عنه.
 2. افتح نافذة الأوامر (Terminal) في مجلد المشروع.
 3. قم بتثبيت المكتبات اللازمة:
    ```bash
    pip install -r requirements.txt
    ```
-4. ابدأ تشغيل الأداة:
-   ```bash
-   python main.py
-   ```
-5. سيفتح المتصفح تلقائياً على الرابط `http://localhost:5000`.
+
+#### الخطوة 4: تشغيل الأداة
+```bash
+python main.py
+```
+سيفتح المتصفح تلقائياً على الرابط `http://localhost:5000`.
 
 ---
  المشروع لأهداف تعليمية فقط وجميع الحقوق محفوظة لأصحابها
@@ -73,20 +99,46 @@ For manual execution, you need:
 - **Python 3.10+**: The core programming language.
 - **FFmpeg**: The engine responsible for audio/video encoding (Essential).
 - **ImageMagick**: Responsible for rendering text into video frames.
-  - *Note:* During ImageMagick installation on Windows, ensure you check **"Install legacy utilities (e.g. convert)"**.
 
 ### 📥 Manual Execution Guide
+
+#### Step 1: Install Essential Dependencies (Required)
+Open PowerShell or Command Prompt **as Administrator** and run the following commands:
+
+```powershell
+# Install FFmpeg
+winget install Gyan.FFmpeg
+
+# Install ImageMagick
+winget install ImageMagick.ImageMagick
+```
+
+#### Step 2: Verify Installation
+After installation, verify that both tools are properly installed:
+
+```powershell
+# Test FFmpeg
+ffmpeg -version
+
+# Test ImageMagick
+magick -version
+```
+
+**Note:** If the commands don't work, restart your terminal or computer.
+
+#### Step 3: Install the Project
 1. Download and extract the repository.
 2. Open a terminal/command prompt in the project folder.
-3. Install dependencies:
+3. Install Python dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the application:
-   ```bash
-   python main.py
-   ```
-5. The browser will automatically open at `http://localhost:5000`.
+
+#### Step 4: Run the Application
+```bash
+python main.py
+```
+The browser will automatically open at `http://localhost:5000`.
 
 ---
 

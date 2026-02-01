@@ -1,0 +1,168 @@
+2026-02-01 13:01:09,881 - INFO - --- Starting Quran Reels Generator ---
+2026-02-01 13:01:09,881 - INFO - Execution Directory: C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator
+2026-02-01 13:01:09,881 - INFO - Bundled Directory: C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator
+2026-02-01 13:01:09,883 - INFO - Output and Font directories verified.
+2026-02-01 13:01:09,883 - INFO - Environment variables set for portable binaries.
+2026-02-01 13:01:11,999 - INFO - Server Starting...
+2026-02-01 13:01:12,083 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-01 13:01:12,083 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-01 13:01:12,182 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:12] "GET / HTTP/1.1" 200 -
+2026-02-01 13:01:21,381 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:21] "OPTIONS /api/generate HTTP/1.1" 200 -
+2026-02-01 13:01:21,633 - INFO - PROGRESS: [1] Clearing output folders...
+2026-02-01 13:01:21,633 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:21] "POST /api/generate HTTP/1.1" 200 -
+2026-02-01 13:01:21,633 - INFO - STATUS (5%): \u062c\u0627\u0631\u064a \u062a\u0646\u0638\u064a\u0641 \u0645\u0644\u0641\u0627\u062a \u0627\u0644\u0625\u062e\u0631\u0627\u062c...
+2026-02-01 13:01:21,635 - INFO - PROGRESS: [2] Preparing 4 \u0622\u064a\u0627\u062a (from 2 to 5)
+2026-02-01 13:01:21,635 - INFO - STATUS (10%): \u062c\u0627\u0631\u064a \u062a\u062d\u0636\u064a\u0631 4 \u0622\u064a\u0627\u062a...
+2026-02-01 13:01:21,635 - INFO - PROGRESS: [3.1] Downloading audio for \u0622\u064a\u0629 2
+2026-02-01 13:01:21,635 - INFO - STATUS (15%): \u062c\u0627\u0631\u064a \u062a\u062d\u0645\u064a\u0644 \u0635\u0648\u062a \u0627\u0644\u0622\u064a\u0629 2...
+2026-02-01 13:01:22,650 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:22] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:22,890 - INFO - PROGRESS: [3.1] Fetching texts
+2026-02-01 13:01:22,892 - INFO - STATUS (18%): \u062c\u0627\u0631\u064a \u062c\u0644\u0628 \u0646\u0635 \u0627\u0644\u0622\u064a\u0629 2...
+2026-02-01 13:01:23,684 - INFO - PROGRESS: [3.1] Building segment
+2026-02-01 13:01:23,684 - INFO - STATUS (24%): \u062c\u0627\u0631\u064a \u0625\u0646\u0634\u0627\u0621 \u0645\u0642\u0637\u0639 \u0627\u0644\u0622\u064a\u0629 2...
+2026-02-01 13:01:23,951 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:23] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:24,145 - INFO - PROGRESS: [3.2] Downloading audio for \u0622\u064a\u0629 3
+2026-02-01 13:01:24,145 - INFO - STATUS (32%): \u062c\u0627\u0631\u064a \u062a\u062d\u0645\u064a\u0644 \u0635\u0648\u062a \u0627\u0644\u0622\u064a\u0629 3...
+2026-02-01 13:01:24,650 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:24] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:24,855 - INFO - PROGRESS: [3.2] Fetching texts
+2026-02-01 13:01:24,855 - INFO - STATUS (36%): \u062c\u0627\u0631\u064a \u062c\u0644\u0628 \u0646\u0635 \u0627\u0644\u0622\u064a\u0629 3...
+2026-02-01 13:01:25,507 - INFO - PROGRESS: [3.2] Building segment
+2026-02-01 13:01:25,508 - INFO - STATUS (41%): \u062c\u0627\u0631\u064a \u0625\u0646\u0634\u0627\u0621 \u0645\u0642\u0637\u0639 \u0627\u0644\u0622\u064a\u0629 3...
+2026-02-01 13:01:25,838 - INFO - PROGRESS: [3.3] Downloading audio for \u0622\u064a\u0629 4
+2026-02-01 13:01:25,838 - INFO - STATUS (50%): \u062c\u0627\u0631\u064a \u062a\u062d\u0645\u064a\u0644 \u0635\u0648\u062a \u0627\u0644\u0622\u064a\u0629 4...
+2026-02-01 13:01:25,962 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:25] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:26,525 - INFO - PROGRESS: [3.3] Fetching texts
+2026-02-01 13:01:26,525 - INFO - STATUS (53%): \u062c\u0627\u0631\u064a \u062c\u0644\u0628 \u0646\u0635 \u0627\u0644\u0622\u064a\u0629 4...
+2026-02-01 13:01:26,650 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:26] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:27,187 - INFO - PROGRESS: [3.3] Building segment
+2026-02-01 13:01:27,188 - INFO - STATUS (59%): \u062c\u0627\u0631\u064a \u0625\u0646\u0634\u0627\u0621 \u0645\u0642\u0637\u0639 \u0627\u0644\u0622\u064a\u0629 4...
+2026-02-01 13:01:27,509 - INFO - PROGRESS: [3.4] Downloading audio for \u0622\u064a\u0629 5
+2026-02-01 13:01:27,511 - INFO - STATUS (67%): \u062c\u0627\u0631\u064a \u062a\u062d\u0645\u064a\u0644 \u0635\u0648\u062a \u0627\u0644\u0622\u064a\u0629 5...
+2026-02-01 13:01:27,956 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:27] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:28,163 - INFO - PROGRESS: [3.4] Fetching texts
+2026-02-01 13:01:28,163 - INFO - STATUS (71%): \u062c\u0627\u0631\u064a \u062c\u0644\u0628 \u0646\u0635 \u0627\u0644\u0622\u064a\u0629 5...
+2026-02-01 13:01:28,650 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:28] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:28,872 - INFO - PROGRESS: [3.4] Building segment
+2026-02-01 13:01:28,872 - INFO - STATUS (76%): \u062c\u0627\u0631\u064a \u0625\u0646\u0634\u0627\u0621 \u0645\u0642\u0637\u0639 \u0627\u0644\u0622\u064a\u0629 5...
+2026-02-01 13:01:29,296 - INFO - PROGRESS: [4] Concatenating segments...
+2026-02-01 13:01:29,296 - INFO - STATUS (85%): \u062c\u0627\u0631\u064a \u062f\u0645\u062c \u0627\u0644\u0645\u0642\u0627\u0637\u0639...
+2026-02-01 13:01:29,301 - INFO - PROGRESS: [5] Writing final video \u2192 C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator\outputs\video\QuranReel_\u0627\u0644\u0641\u0627\u062a\u062d\u0629_2-5_20260201_130129.mp4
+2026-02-01 13:01:29,301 - INFO - STATUS (90%): \u062c\u0627\u0631\u064a \u0643\u062a\u0627\u0628\u0629 \u0627\u0644\u0641\u064a\u062f\u064a\u0648 \u0627\u0644\u0646\u0647\u0627\u0626\u064a...
+2026-02-01 13:01:29,960 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:29] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:30,642 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:30] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:31,958 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:31] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:32,647 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:32] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:33,948 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:33] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:34,649 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:34] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:35,947 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:35] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:36,642 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:36] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:37,964 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:37] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:38,650 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:38] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:39,957 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:39] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:40,644 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:40] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:41,961 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:41] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:01:42,501 - INFO - PROGRESS: [6] Done!
+2026-02-01 13:01:42,501 - INFO - STATUS (100%): \u062a\u0645 \u0628\u0646\u062c\u0627\u062d!
+2026-02-01 13:01:42,649 - INFO - 127.0.0.1 - - [01/Feb/2026 13:01:42] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:04:58,088 - INFO - --- Starting Quran Reels Generator ---
+2026-02-01 13:04:58,088 - INFO - Execution Directory: C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator
+2026-02-01 13:04:58,088 - INFO - Bundled Directory: C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator
+2026-02-01 13:04:58,089 - INFO - Output and Font directories verified.
+2026-02-01 13:04:58,090 - INFO - Environment variables set for portable binaries.
+2026-02-01 13:04:58,358 - INFO - Server Starting...
+2026-02-01 13:04:58,441 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-01 13:04:58,441 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-01 13:04:58,534 - INFO - 127.0.0.1 - - [01/Feb/2026 13:04:58] "[36mGET / HTTP/1.1[0m" 304 -
+2026-02-01 13:05:03,180 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:03] "OPTIONS /api/generate HTTP/1.1" 200 -
+2026-02-01 13:05:03,443 - INFO - PROGRESS: [1] Clearing output folders...
+2026-02-01 13:05:03,443 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:03] "POST /api/generate HTTP/1.1" 200 -
+2026-02-01 13:05:03,444 - INFO - STATUS (5%): جاري تنظيف ملفات الإخراج...
+2026-02-01 13:05:03,447 - INFO - PROGRESS: [2] Preparing 5 آيات (from 3 to 7)
+2026-02-01 13:05:03,447 - INFO - STATUS (10%): جاري تحضير 5 آيات...
+2026-02-01 13:05:03,447 - INFO - PROGRESS: [3.1] Downloading audio for آية 3
+2026-02-01 13:05:03,447 - INFO - STATUS (14%): جاري تحميل صوت الآية 3...
+2026-02-01 13:05:04,160 - INFO - PROGRESS: [3.1] Fetching texts
+2026-02-01 13:05:04,160 - INFO - STATUS (17%): جاري جلب نص الآية 3...
+2026-02-01 13:05:04,464 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:04] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:04,847 - INFO - PROGRESS: [3.1] Building segment
+2026-02-01 13:05:04,848 - INFO - STATUS (21%): جاري إنشاء مقطع الآية 3...
+2026-02-01 13:05:05,200 - INFO - PROGRESS: [3.2] Downloading audio for آية 4
+2026-02-01 13:05:05,201 - INFO - STATUS (28%): جاري تحميل صوت الآية 4...
+2026-02-01 13:05:05,768 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:05] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:05,969 - INFO - PROGRESS: [3.2] Fetching texts
+2026-02-01 13:05:05,969 - INFO - STATUS (31%): جاري جلب نص الآية 4...
+2026-02-01 13:05:06,457 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:06] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:06,551 - INFO - PROGRESS: [3.2] Building segment
+2026-02-01 13:05:06,551 - INFO - STATUS (35%): جاري إنشاء مقطع الآية 4...
+2026-02-01 13:05:06,870 - INFO - PROGRESS: [3.3] Downloading audio for آية 5
+2026-02-01 13:05:06,870 - INFO - STATUS (42%): جاري تحميل صوت الآية 5...
+2026-02-01 13:05:07,559 - INFO - PROGRESS: [3.3] Fetching texts
+2026-02-01 13:05:07,559 - INFO - STATUS (45%): جاري جلب نص الآية 5...
+2026-02-01 13:05:07,770 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:07] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:08,136 - INFO - PROGRESS: [3.3] Building segment
+2026-02-01 13:05:08,136 - INFO - STATUS (49%): جاري إنشاء مقطع الآية 5...
+2026-02-01 13:05:08,459 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:08] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:08,525 - INFO - PROGRESS: [3.4] Downloading audio for آية 6
+2026-02-01 13:05:08,525 - INFO - STATUS (56%): جاري تحميل صوت الآية 6...
+2026-02-01 13:05:09,207 - INFO - PROGRESS: [3.4] Fetching texts
+2026-02-01 13:05:09,207 - INFO - STATUS (59%): جاري جلب نص الآية 6...
+2026-02-01 13:05:09,781 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:09] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:09,824 - INFO - PROGRESS: [3.4] Building segment
+2026-02-01 13:05:09,824 - INFO - STATUS (63%): جاري إنشاء مقطع الآية 6...
+2026-02-01 13:05:10,197 - INFO - PROGRESS: [3.5] Downloading audio for آية 7
+2026-02-01 13:05:10,197 - INFO - STATUS (70%): جاري تحميل صوت الآية 7...
+2026-02-01 13:05:10,455 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:10] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:11,046 - INFO - PROGRESS: [3.5] Fetching texts
+2026-02-01 13:05:11,046 - INFO - STATUS (73%): جاري جلب نص الآية 7...
+2026-02-01 13:05:11,696 - INFO - PROGRESS: [3.5] Building segment
+2026-02-01 13:05:11,696 - INFO - STATUS (77%): جاري إنشاء مقطع الآية 7...
+2026-02-01 13:05:11,768 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:11] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:12,291 - INFO - PROGRESS: [4] Concatenating segments...
+2026-02-01 13:05:12,292 - INFO - STATUS (85%): جاري دمج المقاطع...
+2026-02-01 13:05:12,294 - INFO - PROGRESS: [5] Writing final video → C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator\outputs\video\QuranReel_الفاتحة_3-7_20260201_130512.mp4
+2026-02-01 13:05:12,294 - INFO - STATUS (90%): جاري كتابة الفيديو النهائي...
+2026-02-01 13:05:12,457 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:12] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:13,771 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:13] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:14,459 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:14] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:15,780 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:15] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:16,456 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:16] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:17,764 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:17] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:18,466 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:18] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:19,780 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:19] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:20,464 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:20] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:21,776 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:21] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:22,464 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:22] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:23,771 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:23] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:24,464 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:24] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:25,773 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:25] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:26,464 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:26] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:27,768 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:27] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:28,460 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:28] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:29,774 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:29] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:30,464 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:30] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:31,759 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:31] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:32,464 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:32] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:33,771 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:33] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:34,459 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:34] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:35,777 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:35] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:36,464 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:36] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:05:36,693 - INFO - PROGRESS: [6] Done!
+2026-02-01 13:05:36,693 - INFO - STATUS (100%): تم بنجاح!
+2026-02-01 13:05:37,765 - INFO - 127.0.0.1 - - [01/Feb/2026 13:05:37] "GET /api/progress HTTP/1.1" 200 -
+2026-02-01 13:16:07,281 - INFO - --- Starting Quran Reels Generator ---
+2026-02-01 13:16:07,281 - INFO - Execution Directory: C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator
+2026-02-01 13:16:07,281 - INFO - Bundled Directory: C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator
+2026-02-01 13:16:07,282 - INFO - Output and Font directories verified.
+2026-02-01 13:16:07,292 - INFO - Using system-installed FFmpeg and ImageMagick from PATH.
+2026-02-01 13:17:03,779 - INFO - --- Starting Quran Reels Generator ---
+2026-02-01 13:17:03,779 - INFO - Execution Directory: C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator
+2026-02-01 13:17:03,780 - INFO - Bundled Directory: C:\Users\Sabri\Desktop\Github\Quran-Reels-Generator
+2026-02-01 13:17:03,785 - INFO - Output and Font directories verified.
+2026-02-01 13:17:03,786 - INFO - Using system-installed FFmpeg and ImageMagick from PATH.
+2026-02-01 13:17:04,248 - INFO - Server Starting...
+2026-02-01 13:17:04,329 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-01 13:17:04,329 - INFO - [33mPress CTRL+C to quit[0m
+2026-02-01 13:17:04,463 - INFO - 127.0.0.1 - - [01/Feb/2026 13:17:04] "[36mGET / HTTP/1.1[0m" 304 -

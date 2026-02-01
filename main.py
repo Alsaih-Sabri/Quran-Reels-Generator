@@ -14,6 +14,20 @@ import traceback
 from flask import Flask, request, jsonify, send_file, send_from_directory
 from flask_cors import CORS
 
+# Fix Windows console encoding for Arabic text
+if sys.platform == 'win32':
+    import io
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+    # Set console code page to UTF-8
+    try:
+        import ctypes
+        kernel32 = ctypes.windll.kernel32
+        kernel32.SetConsoleCP(65001)
+        kernel32.SetConsoleOutputCP(65001)
+    except:
+        pass
+
 # --- Step: Path Resolution Functions ---
 def app_dir():
     """Returns the directory of the executable (or script) - Use for external files (fonts, outputs, logs)"""
@@ -34,9 +48,11 @@ BUNDLE_DIR = bundled_dir()
 # --- Step: Setup Logging ---
 log_path = os.path.join(EXEC_DIR, "runlog.txt")
 logging.basicConfig(filename=log_path, level=logging.INFO, 
-                    format='%(asctime)s - %(levelname)s - %(message)s', force=True)
-console_handler = logging.StreamHandler()
+                    format='%(asctime)s - %(levelname)s - %(message)s', 
+                    encoding='utf-8', force=True)
+console_handler = logging.StreamHandler(sys.stdout)
 console_handler.setLevel(logging.INFO)
+console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 logging.getLogger().addHandler(console_handler)
 
 logging.info("--- Starting Quran Reels Generator ---")
@@ -44,9 +60,10 @@ logging.info(f"Execution Directory: {EXEC_DIR}")
 logging.info(f"Bundled Directory: {BUNDLE_DIR}")
 
 # --- Step: Define Paths ---
-FFMPEG_EXE = os.path.join(BUNDLE_DIR, "bin", "ffmpeg", "ffmpeg.exe")
-IM_MAGICK_EXE = os.path.join(BUNDLE_DIR, "bin", "imagemagick", "magick.exe")
-IM_HOME = os.path.join(BUNDLE_DIR, "bin", "imagemagick")
+# Use system-installed FFmpeg and ImageMagick (installed via winget)
+import shutil as shutil_find
+FFMPEG_EXE = shutil_find.which("ffmpeg") or "ffmpeg"
+IM_MAGICK_EXE = shutil_find.which("magick") or "magick"
 
 VISION_DIR = os.path.join(BUNDLE_DIR, "vision")
 UI_PATH = os.path.join(BUNDLE_DIR, "UI.html")
@@ -69,42 +86,31 @@ try:
 except Exception as e:
     logging.error(f"Failed to create directories: {e}")
 
-# Validate Bundled Requirements
-if not os.path.isfile(FFMPEG_EXE): logging.error(f"Missing ffmpeg.exe at {FFMPEG_EXE}")
-if not os.path.isfile(IM_MAGICK_EXE): logging.error(f"Missing magick.exe at {IM_MAGICK_EXE}")
-if not os.path.isdir(VISION_DIR): logging.error(f"Missing vision folder at {VISION_DIR}")
-if not os.path.isfile(UI_PATH): logging.error(f"Missing UI.html at {UI_PATH}")
+# Validate Requirements
+import shutil as shutil_check
+if not shutil_check.which(FFMPEG_EXE): 
+    logging.error(f"FFmpeg not found in system PATH. Please install it using: winget install Gyan.FFmpeg")
+if not shutil_check.which(IM_MAGICK_EXE): 
+    logging.error(f"ImageMagick not found in system PATH. Please install it using: winget install ImageMagick.ImageMagick")
+if not os.path.isdir(VISION_DIR): 
+    logging.error(f"Missing vision folder at {VISION_DIR}")
+if not os.path.isfile(UI_PATH): 
+    logging.error(f"Missing UI.html at {UI_PATH}")
 
 # --- Step: Configure Environment Variables ---
+# Use system-installed binaries from PATH
 os.environ["FFMPEG_BINARY"] = FFMPEG_EXE
 os.environ["IMAGEIO_FFMPEG_EXE"] = FFMPEG_EXE
-
-# ImageMagick Environment Setup
 os.environ["IMAGEMAGICK_BINARY"] = IM_MAGICK_EXE
-os.environ["MAGICK_HOME"] = IM_HOME
-os.environ["MAGICK_CONFIGURE_PATH"] = os.path.join(IM_HOME, "config")
-# Pre-flight check: if config dir missing, fallback to root or modules
-if not os.path.exists(os.environ["MAGICK_CONFIGURE_PATH"]):
-    os.environ["MAGICK_CONFIGURE_PATH"] = IM_HOME # Portable versions often have xmls in root
 
-os.environ["MAGICK_CODER_MODULE_PATH"] = os.path.join(IM_HOME, "modules", "coders") # Typical path
-if not os.path.exists(os.environ["MAGICK_CODER_MODULE_PATH"]):
-    os.environ["MAGICK_CODER_MODULE_PATH"] = os.path.join(IM_HOME, "modules")
-
-# Prepend PATH for DLL discovery
-os.environ["PATH"] = os.pathsep.join([
-    os.path.dirname(FFMPEG_EXE),
-    IM_HOME,
-    os.environ.get("PATH", "")
-])
-
-logging.info("Environment variables set for portable binaries.")
+logging.info("Using system-installed FFmpeg and ImageMagick from PATH.")
 
 import requests as http_requests
 from pydub import AudioSegment
+# pydub will use system FFmpeg from PATH
 AudioSegment.converter = FFMPEG_EXE
 AudioSegment.ffmpeg = FFMPEG_EXE
-AudioSegment.ffprobe = os.path.join(os.path.dirname(FFMPEG_EXE), "ffprobe.exe")
+AudioSegment.ffprobe = "ffprobe"  # Also from system PATH
 
 from moviepy.config import change_settings
 try:
@@ -191,13 +197,23 @@ def reset_progress():
 
 def add_log(message):
     current_progress['log'].append(message)
-    logging.info(f"PROGRESS: {message}")
-    print(f'>>> {message}', flush=True)
+    try:
+        logging.info(f"PROGRESS: {message}")
+        print(f'>>> {message}', flush=True)
+    except UnicodeEncodeError:
+        # Fallback for systems that can't handle Arabic
+        safe_message = message.encode('ascii', errors='replace').decode('ascii')
+        logging.info(f"PROGRESS: {safe_message}")
+        print(f'>>> {safe_message}', flush=True)
 
 def update_progress(percent, status):
     current_progress['percent'] = percent
     current_progress['status'] = status
-    logging.info(f"STATUS ({percent}%): {status}")
+    try:
+        logging.info(f"STATUS ({percent}%): {status}")
+    except UnicodeEncodeError:
+        safe_status = status.encode('ascii', errors='replace').decode('ascii')
+        logging.info(f"STATUS ({percent}%): {safe_status}")
 
 def clear_outputs():
     # Only clear audio directory to keep video history
